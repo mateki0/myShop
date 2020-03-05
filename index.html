@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="upper-navbar">
+
+
+      <div class="menu nav-component">
+        <i class="fas fa-angle-double-down"></i>
+      </div>
+      <div class="logo nav-component">
+        <a id="alt-logo" href="#">MyShop</a>
+      </div>
+      <div class="search nav-component">
+        <div class="search-group">
+          <button type="button" id="select-category">All<i class="fas fa-caret-down"></i></button>
+          <input type="text" value="" id="search-input">
+          <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="search-category-dropdown">
+          <ul>
+            <li class="category">Arts&Crafts</li>
+            <li class="category">Automotive</li>
+            <li class="category">Baby</li>
+            <li class="category">Beauty&Personal Care</li>
+            <li class="category">Books</li>
+            <li class="category">Tools and Home Improvement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="language  nav-component  right-components">
+        <span>EN</span>
+        <i class="fas fa-globe"></i>
+      </div>
+      <div class="language-dropdown">
+        <span>Change language</span>
+        <ul>
+          <li class="language-select eng"><input type="radio" name="language" checked="true">English - EN</li>
+          <li class="language-select"><input type="radio" name="language">Espanol - ES</li>
+          <li class="language-select"><input type="radio" name="language">Deutsch - DE</li>
+        </ul>
+      </div>
+
+      <div class="account nav-component right-components">
+        <span id="hello-span">Hello, Sign in</span>
+        <span id="account-span">Account & Lists <i class="fas fa-caret-down"></i></span>
+      </div>
+      <div class="account-dropdown">
+        <div class="center-column">
+          <button type="button" name="button" id="sign-in">Sign In</button>
+          <div id="span-with-register-href">
+          <span>New Customer?</span><a href="/register" id="register-a">Start Here.</a>
+          </div>
+        </div>
+        <div id="account-dropdown-columns">
+          <div class="left-column">
+            <span class="list-name">Your List</span>
+            <ul id="your-list">
+              <li class="your-list-li">Create a List</li>
+              <li class="your-list-li">Find a Gift</li>
+              <li class="your-list-li">Save items from the Web</li>
+              <li class="your-list-li">Wedding Registry</li>
+              <li class="your-list-li">Baby Registry</li>
+              <li class="your-list-li">Friends & Family Gifting</li>
+            </ul>
+          </div>
+          <div class="right-column">
+            <span class="list-name">Your account</span>
+            <ul id="your-account">
+              <li class="your-list-li">Your Account</li>
+              <li class="your-list-li">Your Orders</li>
+              <li class="your-list-li">Your Lists</li>
+              <li class="your-list-li">Your Recommendations</li>
+              <li class="your-list-li">Your Subscribe & Subscriptions</li>
+              <li class="your-list-li">Memberships & Subscriptions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="returns nav-component right-components">
+        <span id="returns-span">Returns</span>
+        <span id="orders-span">& Orders</span>
+      </div>
+      <div class="cart nav-component ">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-items-counter">0</span>
+      </div>
+    </div>
+    <div class="lower-navbar">
+      <div class="global-slot">
+
+        <div class="deliver-to-country">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="deliver-spans">
+            <span id="deliver-to-span">Deliver to</span>
+            <span id="country-span">Poland</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="under-search-menu">
+        <div class="today-deals">
+            <span>Today's Deals</span>
+        </div>
+        <div class="help">
+          <span>Help</span>
+        </div>
+        <div class="Registry">
+          <span>Registry</span>
+        </div>
+        <div class="gift-cards">
+          <span>Gift Cards</span>
+        </div>
+        <div class="sell">
+          <span>Sell</span>
+        </div>
+        <div class="your-amazon">
+          <span>Your Amazon.com</span>
+        </div>
+      </div>
+
+      <div class="shop-todays-deals">
+        <span>Shop Today's Deals</span>
+      </div>
+    </div>
+  </nav>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>

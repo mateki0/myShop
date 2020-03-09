@@ -1,0 +1,170 @@
+
+/* Left Bar !! */
+.left-nav{
+
+  float:left;
+}
+.first-left-nav{
+  width:200px;
+  height:496px;
+  border-right: 1px solid rgba(0,0,0, 0.3);
+}
+.first-left-nav-ul{
+  list-style: none;
+  padding-left:20px;
+  margin-top:5px;
+}
+.first-left-nav>h5{
+  margin:10px 0 0 10px;
+
+}
+.first-left-nav-li>a{
+  text-decoration: none;
+  color:#333333;
+}
+.first-left-nav-li>a:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+.nav-li{
+  font-size:12px;
+  line-height:17px;
+}
+
+.second-left-nav{
+  width:200px;
+  height:161px;
+  border-right: 1px solid rgba(0,0,0, 0.3);
+}
+.second-left-nav>h4{
+  margin-left:10px;
+  margin-top: 0;
+
+  color:rgba(0,0,0,0.4);
+}
+.second-left-nav-ul{
+  list-style:none;
+  padding-left:10px;
+}
+.condition{
+  margin-bottom:10px;
+  font-weight:600;
+}
+.second-left-nav-li{
+  color:#111;
+}
+main{
+  float:left;
+  margin-left:15px;
+  width:1683px;
+}
+.best-sellers{
+  display:flex;
+  flex-direction: column;
+  color:#111;
+}
+#internation-best-sellers{
+  font-size:28px;
+  font-weight: 600;
+  margin:15px 0 15px 0;
+}
+#top-products-info{
+  font-size:13px;
+}
+
+.filter-bar{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top: 50px;
+  padding:10px;
+  border-top:1px solid rgba(0,0,0,0.4);
+  border-bottom:1px solid rgba(0,0,0,0.4);
+  font-size:13px;
+  color:#111;
+}
+#explore-best-sellers{
+  color:#C45500;
+}
+
+
+/* Offers */
+.offers-list{
+  padding:0;
+  list-style-type: none;
+}
+.single-offer{
+  height:262px;
+  padding:0;
+
+}
+.offer{
+  display:flex;
+  flex-direction: row;
+}
+
+.offer>img{
+  width:218px;
+  height:218px;
+
+}
+.offer-description{
+  padding-left:20px;
+}
+.offer-description>div{
+  display:flex;
+  flex-direction: column;
+}
+
+.item-name{
+  color:#0066c0;
+  text-decoration: none;
+  font-size: 17px;
+}
+.offer-href-description{
+  font-size:12px;
+  color:#555555;
+}
+.offer-title-div{
+  line-height:21px;
+  margin-bottom: 15px;
+}
+.offer-ships{
+  font-size:12px;
+  color:#111111;
+}
+.offer-price{
+  font-size:21px;
+  color:#111111;
+}
+.offer-price-bracket{
+  font-size:13px;
+  color:#111111;
+}
+.offer-subscribe-save{
+  font-size:12px;
+  color:#0066c0;
+  text-decoration: none;
+}
+.item-name:hover, .offer-subscribe-save:hover,.other-sellers-href:hover{
+  color:#db8f00;
+}
+.price-ships-div{
+  margin-bottom:25px;
+  line-height:21px;
+}
+.more-options-div{
+  line-height:25px;
+}
+.more-options-span, .more-options-secondary-price{
+  font-size:12px;
+  color:#555555;
+}
+.more-options-price{
+  font-size:12px;
+  color:#111111;
+}
+.other-sellers-href{
+  color:#0066c0;
+  text-decoration: none;
+}

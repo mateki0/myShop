@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Shop</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="item.css">
+  <link rel="stylesheet" type="text/css" href="../navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 </head>
 
@@ -19,7 +19,7 @@
         <i class="fas fa-angle-double-down"></i>
       </div>
       <div class="logo nav-component">
-        <a id="alt-logo" href="#">MyShop</a>
+        <a id="alt-logo" href="../index.html">MyShop</a>
       </div>
       <div class="search nav-component">
         <div class="search-group">
@@ -132,69 +132,34 @@
     </div>
   </nav>
   <main>
-    <div id="shop-advertise" style="background-image: url('images/first.jpg');">
-      <div class="scroll-images">
-        <button type="button" name="left-button" class="left-image-button"><i class="fas image-change-buttons fa-chevron-left"></i></button>
-        <button type="button" name="right-button" class="right-image-button"><i class="fas image-change-buttons fa-chevron-right"></i></button>
-      </div>
-    </div>
-    <div class="horizontal-boxes">
-      <div class="category-box box">
-        <h2>Shop by Category</h2>
-        <div>
-          <div class="category-row">
-            <a href="#" class="computers mini-category-box">
-              <img src="images/computer.jpg" alt="Computers">
-              <span>Computers & Accesories</span>
-            </a>
-            <a href="#" class="video-games mini-category-box">
-              <img src="images/videogames.jpg" alt="videoGames">
-              <span>Video Games</span>
-            </a>
-          </div>
-          <div class="category-row">
-            <a href="#" class="baby mini-category-box">
-              <img src="images/baby.jpg" alt="baby">
-              <span>Baby</span>
-            </a>
-            <a href="#" class="toys mini-category-box">
-              <img src="images/toys.jpg" alt="toys">
-              <span>Toys & Games</span>
-            </a>
-          </div>
-        </div>
-        <div id="link-to-shop">
-          <a href="./categories/categories.html">Shop now</a>
-      </div>
-      </div>
+    <div class="columns">
+      <div class="left-col">
+        <img class="product-img" src="../images/apple.jpg"></img>
 
-    <div class="cellphones-box box">
-      <h2>Like-new Cellphones</h2>
-      <div class="box-img">
-      <img src="images/cellphone.jpg" alt="cellphones"></img>
-    </div>
-    <div class="see-more-phones">
-    <a href="#">See more</a>
-  </div>
-    </div>
-    <div class="basics-box box">
-      <h2>MyShop Basics</h2>
-      <div class="box-img">
-      <img src="images/cellphone.jpg" alt="cellphones"></img>
-    </div>
-    <div class="see-more-phones">
-    <a href="#">See more</a>
-  </div>
-    </div>
-    <div class="sign-in-box box">
-      <h2>Sign in for the best experience</h2>
-        <a id="sign-in-box-href">Sign in securely</a>
-    </div>
-    </div>
+
+      </div>
+      <div class="center-col">
+        <div class="prod-name-div">
+          <h2 class="center-col-prod-name">Apple</h2>
+          <span class="offer-href-description">by <a href="#" class="seller-name">Mateusz</a></span>
+        </div>
+        <div class="prod-price">
+          <div class="price-with-description">
+            <span class="price-word">Price:</span>
+            <span class="price">$10</span>
+            <span class="price-description">($1/1 Apple)</span>
+          </div>
+          <span class="in-stock">In Stock</span>
+        </div>
+        <div class="add-to-cart">
+          <button type="button" name="add" id="add">Add To Cart</button>
+
+        </div>
+      </div>
     </div>
   </main>
-  <script src="main.js" type="text/javascript"></script>
-  <script src="navbar.js" type="text/javascript"></script>
+  <script src="../navbar.js" type="text/javascript"></script>
+  <script src="item.js" type="text/javascript"></script>
 </body>
 
 </html>

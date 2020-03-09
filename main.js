@@ -1,39 +1,27 @@
-// Navbar dropdowns !
+// Image Change buttons
 
-const language = document.querySelector('.language');
-const languageDropdown = document.querySelector('.language-dropdown');
+const leftButton = document.querySelector('.left-image-button');
+const rightButton = document.querySelector('.right-image-button');
 
-const account = document.querySelector('.account');
-const accountDropdown = document.querySelector('.account-dropdown');
 
-function openAccountDropdown() {
-  accountDropdown.style.display = 'flex';
-  document.body.classList.add('overlay');
+function changeImage(el) {
+  const shopAdvertise = document.getElementById('shop-advertise');
+  var style = shopAdvertise.style;
+  if ((style.backgroundImage == 'url("images/first.jpg")') && (el.target.className.includes('left-image-button') || (el.target.parentElement.className.includes('left-image-button')))) {
+    style.backgroundImage = 'url("images/third.jpg")';
+  } else if ((style.backgroundImage == 'url("images/third.jpg")') && (el.target.className.includes('left-image-button') || (el.target.parentElement.className.includes('left-image-button')))) {
+    style.backgroundImage = 'url("images/second.jpg")';
+  } else if ((style.backgroundImage == 'url("images/second.jpg")') && (el.target.className.includes('left-image-button') || (el.target.parentElement.className.includes('left-image-button')))) {
+    style.backgroundImage = 'url("images/first.jpg")';
+  }
+  if ((style.backgroundImage == 'url("images/first.jpg")') && (el.target.className.includes('right-image-button') || (el.target.parentElement.className.includes('right-image-button')))) {
+    style.backgroundImage = 'url("images/second.jpg")';
+  } else if ((style.backgroundImage == 'url("images/third.jpg")') && (el.target.className.includes('right-image-button') || (el.target.parentElement.className.includes('right-image-button')))) {
+    style.backgroundImage = 'url("images/first.jpg")';
+  } else if ((style.backgroundImage == 'url("images/second.jpg")') && (el.target.className.includes('right-image-button') || (el.target.parentElement.className.includes('right-image-button')))) {
+    style.backgroundImage = 'url("images/third.jpg")';
+  }
+
 }
-
-function closeAccountDropdown() {
-  accountDropdown.style.display = 'none';
-  document.body.classList.remove('overlay');
-}
-
-
-function openLanguageDropdown() {
-  languageDropdown.style.display = "flex";
-  document.body.classList.add('overlay');
-}
-
-function closeLanguageDropdown(el) {
-  languageDropdown.style.display = "none";
-  document.body.classList.remove('overlay');
-}
-language.addEventListener('mouseover', openLanguageDropdown);
-language.addEventListener('mouseleave', closeLanguageDropdown);
-languageDropdown.addEventListener('mouseover', openLanguageDropdown);
-languageDropdown.addEventListener('mouseleave', closeLanguageDropdown);
-
-account.addEventListener('mouseover', openAccountDropdown);
-account.addEventListener('mouseleave', closeAccountDropdown);
-accountDropdown.addEventListener('mouseover', openAccountDropdown);
-accountDropdown.addEventListener('mouseleave', closeAccountDropdown);
-
-//
+leftButton.addEventListener('click', changeImage)
+rightButton.addEventListener('click', changeImage)
